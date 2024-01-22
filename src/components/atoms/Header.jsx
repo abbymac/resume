@@ -1,14 +1,7 @@
-import { Grid, Toolbar, Box, Button } from '@mui/material';
+import { Box, Button } from '@mui/material';
 import styled from 'styled-components';
-import AppBar from '@mui/material/AppBar';
-import EmailIcon from '@mui/icons-material/Email';
-
-const navItems = ['home', 'resume', 'about']
-const testItem = {
-    email: {
-        icon: EmailIcon,
-    }
-}
+import {NavItems} from '../../constants/NavItems';
+import {Link} from '@mui/material';
 
 const HeaderContainer = styled(Box)`
     display: flex;
@@ -23,20 +16,15 @@ const NavItemContainer = styled(Box)`
 const Header = () => {
     return (
         <HeaderContainer >
-            <NavItemContainer sx={{ display: { xs: 'none', sm: 'block' }, padding: '20px' }}>
-                {navItems.map((item) => (
-                <Button key={item} sx={{ color: '#fff' }}>
-                    {item}
-                </Button>
+            <NavItemContainer sx={{ padding: '20px' }} >
+                {Object.keys(NavItems).map((item) => (
+                    <Link key={NavItems[item].text} href={NavItems[item].link} target="_blank">
+                        <Button key={NavItems[item].text} sx={{ color: '#fff' }} >
+                            {NavItems[item].icon}
+                        </Button>
+                    </Link>
                 ))}
             </NavItemContainer>
-            {/* <NavItemContainer>
-                {Object.keys(testItem).map(key => {
-                    return (
-                        key.icon
-                    )
-                })}
-            </NavItemContainer> */}
         </HeaderContainer>
     )
 }

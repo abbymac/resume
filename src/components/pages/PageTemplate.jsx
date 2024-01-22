@@ -28,7 +28,7 @@ const PageTemplate = ({ children, ...props }) => {
   return (
     <PageContainer backgroundColor={theme.palette.primary.main}>
       <Header />
-      <Content>{children} HELLLLLLOOOOOOOOO</Content>
+      <Content>{children}</Content>
     </PageContainer>
   );
 };
