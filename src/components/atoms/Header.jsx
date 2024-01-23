@@ -1,7 +1,6 @@
-import { Box, Button } from '@mui/material';
+import { Box, Button, Link, Tooltip } from '@mui/material';
 import styled from 'styled-components';
-import {NavItems} from '../../constants/NavItems';
-import {Link} from '@mui/material';
+import { NavItems } from '../../constants/NavItems';
 
 const HeaderContainer = styled(Box)`
     display: flex;
@@ -15,18 +14,20 @@ const NavItemContainer = styled(Box)`
 
 const Header = () => {
     return (
-        <HeaderContainer >
-            <NavItemContainer sx={{ padding: '20px' }} >
-                {Object.keys(NavItems).map((item) => (
-                    <Link key={NavItems[item].text} href={NavItems[item].link} target="_blank">
-                        <Button key={NavItems[item].text} sx={{ color: '#fff' }} >
-                            {NavItems[item].icon}
-                        </Button>
+        <HeaderContainer>
+            <NavItemContainer sx={{ padding: '20px' }}>
+                {Object.keys(NavItems).map((itemKey) => (
+                    <Link key={itemKey} href={NavItems[itemKey].link} target="_blank" sx={{ textDecoration: 'none' }}>
+                        <Tooltip title={NavItems[itemKey].text}>
+                            <Button sx={{ color: '#fff', fontSize: 25 }}> 
+                                {NavItems[itemKey].icon}
+                            </Button>
+                        </Tooltip>
                     </Link>
                 ))}
             </NavItemContainer>
         </HeaderContainer>
-    )
-}
+    );
+};
 
 export default Header;

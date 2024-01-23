@@ -38,7 +38,7 @@ const AvatarSection = ({ children, ...props }) => {
         <PageContainer >
             <Container container theme={theme} >
                 <Grid item >
-                    <Text variant="h2" theme={theme} sx={{paddingBottom: 0}}>
+                    <Text variant="h2" theme={theme} sx={{paddingBottom: 0, fontWeight: 100}}>
                         Abby McInerney
                     </Text>
                 </Grid>

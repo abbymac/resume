@@ -21,7 +21,6 @@ const Content = styled.div`
   align-items: start; // Adjusts alignment along the cross axis
 `;
 
-
 const PageTemplate = ({ children, ...props }) => {
   const theme = useTheme();
 
