@@ -150,12 +150,12 @@ Error generating stack: `+i.message+`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 30vh;
+    height: 35vh;
     flex-direction: column !important;
 `,yu=Yt(qg)`
     padding: 10px 0 5px 0 ;
     color: ${e=>e.theme.palette.tertiary.main};
-`,M4=({children:e,...t})=>{const n=Do();return R.jsx(b4,{children:R.jsxs(N4,{container:!0,theme:n,children:[R.jsx(Ke,{item:!0,children:R.jsx(yu,{variant:"h2",theme:n,sx:{paddingBottom:0,fontWeight:100},children:"Abby McInerney"})}),R.jsx(Ke,{item:!0,children:R.jsx(yu,{variant:"body2",sx:{color:n.palette.tertiary.main},theme:n,children:"Software Engineer"})}),R.jsx(Ke,{item:!0,children:R.jsx(d5,{sx:{width:100,height:100},src:O4})}),R.jsxs(Ke,{container:!0,sx:{justifyContent:"center",alignItems:"center"},children:[R.jsx(Cv,{sx:{color:n.palette.primary.main}}),R.jsx(yu,{variant:"body2",sx:{color:n.palette.primary.main},theme:n,children:"Denver, CO"})]})]})})},ii=({size:e})=>R.jsx(cd,{sx:{margin:e}}),z4=Yt(Ke)`
+`,M4=({children:e,...t})=>{const n=Do();return R.jsx(b4,{children:R.jsxs(N4,{container:!0,theme:n,children:[R.jsx(Ke,{item:!0,children:R.jsx(yu,{variant:"h2",theme:n,sx:{paddingBottom:0,fontWeight:100},children:"Abby McInerney"})}),R.jsx(Ke,{item:!0,children:R.jsx(yu,{variant:"body2",sx:{color:n.palette.tertiary.main},theme:n,children:"Software Engineer"})}),R.jsx(Ke,{item:!0,children:R.jsx(d5,{sx:{width:150,height:150},src:O4})}),R.jsxs(Ke,{container:!0,sx:{justifyContent:"center",alignItems:"center"},children:[R.jsx(Cv,{sx:{color:n.palette.primary.main}}),R.jsx(yu,{variant:"body2",sx:{color:n.palette.primary.main},theme:n,children:"Denver, CO"})]})]})})},ii=({size:e})=>R.jsx(cd,{sx:{margin:e}}),z4=Yt(Ke)`
     flex-direction: row !important;
     width: 80% !important;
     margin: auto;
