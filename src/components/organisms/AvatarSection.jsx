@@ -20,7 +20,7 @@ const Container = styled(Grid)`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 30vh;
+    height: 35vh;
     flex-direction: column !important;
 `
 
@@ -49,7 +49,7 @@ const AvatarSection = ({ children, ...props }) => {
                 </Grid>
                 <Grid item>
                     <Avatar
-                        sx={{ width: 100, height: 100 }}
+                        sx={{ width: 150, height: 150 }}
                         src={avatarImage}
                     />
                 </Grid>
