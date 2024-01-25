@@ -21,14 +21,13 @@ const Content = styled.div`
   align-items: start; // Adjusts alignment along the cross axis
 `;
 
-
 const PageTemplate = ({ children, ...props }) => {
   const theme = useTheme();
 
   return (
     <PageContainer backgroundColor={theme.palette.primary.main}>
       <Header />
-      <Content>{children} HELLLLLLOOOOOOOOO</Content>
+      <Content>{children}</Content>
     </PageContainer>
   );
 };

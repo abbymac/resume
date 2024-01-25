@@ -21,7 +21,7 @@ const Container = styled(Grid)`
     justify-content: center;
     align-items: center;
     height: 30vh;
-    flex-direction: column;
+    flex-direction: column !important;
 `
 
 const Text = styled(Typography)`
@@ -38,7 +38,7 @@ const AvatarSection = ({ children, ...props }) => {
         <PageContainer >
             <Container container theme={theme} >
                 <Grid item >
-                    <Text variant="h2" theme={theme} sx={{paddingBottom: 0}}>
+                    <Text variant="h2" theme={theme} sx={{paddingBottom: 0, fontWeight: 100}}>
                         Abby McInerney
                     </Text>
                 </Grid>
@@ -53,7 +53,7 @@ const AvatarSection = ({ children, ...props }) => {
                         src={avatarImage}
                     />
                 </Grid>
-                <Grid container sx={{ flexDirection: 'row', justifyContent: 'center', alignItems: 'center' }}>
+                <Grid container sx={{ justifyContent: 'center', alignItems: 'center' }}>
                     <PlaceIcon sx={{color: theme.palette.primary.main}}/>
                     <Text variant="body2" sx={{ color: theme.palette.primary.main }} theme={theme}>
                         Denver, CO
