@@ -5,7 +5,7 @@ import { Avatar, Box, Typography } from '@mui/material';
 import PlaceIcon from '@mui/icons-material/Place';
 
 import Header from '../atoms/Header';
-import avatarImage from '../../assets/avatar.jpg';
+import avatarImage from '../../assets/Headshot.jpeg';
 
 const PageContainer = styled.div`
   width: 100vw;
