@@ -11,7 +11,6 @@ const theme = createTheme({
     tertiary: {
         main: '#8D99AE'
     }
-    // Add more colors as needed
   },
   typography: {
     h1: {
