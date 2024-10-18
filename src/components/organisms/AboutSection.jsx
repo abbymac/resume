@@ -11,7 +11,6 @@ const AboutContainer = styled(Grid)`
 `
 const TextContainer = styled(Grid)`
     flex-grow: 2;
-    // color: ${props => props.theme.palette.secondary.main}
 `
 
 const MenuContainer = styled(Grid)`
