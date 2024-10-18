@@ -3,30 +3,34 @@ import { createTheme } from '@mui/material/styles';
 const theme = createTheme({
   palette: {
     primary: {
-        main: '#C5DECD',
+        main: '#374A67',
     },
     secondary: {
-        main: '#3D405B',
+        main: '#A24936',
     },
     tertiary: {
-        main: '#FFD9DA'
+        main: '#8D99AE'
     }
     // Add more colors as needed
   },
   typography: {
     h1: {
       fontSize: '2.5rem',
+      color: '#f2f2f2'
     },
     h2: {
         fontSize: '1.5rem',
+        color: '#F2F2F2'
     },
     body1: {
       fontSize: '1rem',
-      fontWeight: '100'
+      fontWeight: '100',
+      color: '#f2f2f2'
     },
     body2: {
         fontSize: '0.8rem',
-        fontWeight: '100'
+        fontWeight: '100',
+        color: '#F2F2F2'
       },
   },
 

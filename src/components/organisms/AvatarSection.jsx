@@ -26,10 +26,7 @@ const Container = styled(Grid)`
 
 const Text = styled(Typography)`
     padding: 10px 0 5px 0 ;
-    color: ${props => props.theme.palette.tertiary.main};
 `;
-
-
 
 const AvatarSection = ({ children, ...props }) => {
     const theme = useTheme();
@@ -38,12 +35,12 @@ const AvatarSection = ({ children, ...props }) => {
         <PageContainer >
             <Container container theme={theme} >
                 <Grid item >
-                    <Text variant="h2" theme={theme} sx={{paddingBottom: 0, fontWeight: 100}}>
+                    <Text variant="h2" theme={theme} sx={{ paddingBottom: 0, fontWeight: 100 }}>
                         Abby McInerney
                     </Text>
                 </Grid>
                 <Grid item>
-                    <Text variant="body2" sx={{ color: theme.palette.tertiary.main }} theme={theme}>
+                    <Text variant="body2" theme={theme}>
                         Software Engineer
                     </Text>
                 </Grid>
@@ -54,8 +51,8 @@ const AvatarSection = ({ children, ...props }) => {
                     />
                 </Grid>
                 <Grid container sx={{ justifyContent: 'center', alignItems: 'center' }}>
-                    <PlaceIcon sx={{color: theme.palette.primary.main}}/>
-                    <Text variant="body2" sx={{ color: theme.palette.primary.main }} theme={theme}>
+                    <PlaceIcon sx={{ color: theme.palette.primary.main }} />
+                    <Text variant="body2" theme={theme}>
                         Denver, CO
                     </Text>
                 </Grid>
