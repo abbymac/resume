@@ -35,7 +35,7 @@ const AvatarSection = ({ children, ...props }) => {
         <PageContainer >
             <Container container theme={theme} >
                 <Grid item >
-                    <Text variant="h2" theme={theme} sx={{ paddingBottom: 0, fontWeight: 100 }}>
+                    <Text variant="h1" theme={theme} sx={{ paddingBottom: 0, fontWeight: 400, color: theme.palette.quaternary.main }}>
                         Abby McInerney
                     </Text>
                 </Grid>
@@ -52,7 +52,7 @@ const AvatarSection = ({ children, ...props }) => {
                 </Grid>
                 <Grid container sx={{ justifyContent: 'center', alignItems: 'center' }}>
                     <PlaceIcon sx={{ color: theme.palette.primary.main }} />
-                    <Text variant="body2" theme={theme}>
+                    <Text variant="body2" sx={{color: theme.palette.primary.contrastText}}>
                         Denver, CO
                     </Text>
                 </Grid>

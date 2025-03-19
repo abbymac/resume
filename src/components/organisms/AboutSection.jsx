@@ -58,7 +58,7 @@ const AboutSection = () => {
                         </Typography>
                         <Spacer size={1} />
                         <Typography item variant="body1">
-                            Currently, I’m a Software Developer at Aspire General Insurance, where I designed, engineered, and implemented a fully functional React/NextJS project tracker to manage Time Limit Demands (TLDs). This system automatically scrapes company emails, uses an LLM to classify TLD-related content, and allows users to track and manage demands through an intuitive UI. I also built an application that helps the mail team audit batch files by processing PDF data, reducing audit time by 50% and saving the team 3 hours per day. In this role, I manage a team of offshore developers and collaborate closely with the product team to deliver impactful solutions.
+                            Currently, I’m a Senior Software Developer at Aspire General Insurance, where I designed, engineered, and implemented a fully functional React/NextJS project tracker to manage Time Limit Demands (TLDs). This system automatically scrapes company emails, uses an LLM to classify TLD-related content, and allows users to track and manage demands through an intuitive UI. I also built an application that helps the mail team audit batch files by processing PDF data, reducing audit time by 50% and saving the team 3 hours per day. In this role, I manage a team of offshore developers and collaborate closely with the product team to deliver impactful solutions.
                         </Typography>
                         <Spacer size={1} />
                         <Typography variant="body1">
@@ -67,6 +67,8 @@ const AboutSection = () => {
                         <Spacer size={1} />
                     </Grid>
                 </TextContainer>
+            <Spacer size={3} />
+
             </AboutContainer>
         </>
     );
